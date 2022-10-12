@@ -23,11 +23,12 @@
 </head>
 
 <body>
-	<header class="header" style="background-image: url(images/header-bg.jpg);">
+	<header class="header" style="background-image: url(images/header-bg.jpg);" id="header">
 		<div class="container">
 
 			<nav class="menu">
-				<a class="logo" href="#">
+				<div class="container container--flex">
+				<a class="logo" href="#header">
 					<img class="logo__img" src="images/logo.svg" alt="Логотип">
 				</a>
 				<button class="burger" type="button">
@@ -36,31 +37,32 @@
 				</button>
 				<ul class="menu__list">
 					<li class="menu__item">
-						<a class="menu__link" href="#">Про мене</a>
+						<a class="menu__link" href="#about">Про мене</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">Навички</a>
+						<a class="menu__link" href="#skills">Навички</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">Послуги</a>
+						<a class="menu__link" href="#services">Послуги</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">Портфоліо</a>
+						<a class="menu__link" href="#jobs">Портфоліо</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">Відгуки</a>
+						<a class="menu__link" href="#testimonials">Відгуки</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">Контакти</a>
+						<a class="menu__link" href="#contacts">Контакти</a>
 					</li>
 				</ul>
+			</div>
 			</nav>
 
 			<div class="header__content">
 				<h1 class="header__title">
 					<span class="header__title-span">Вітаю, я Сергій Сірко</span>frontend- розробник
 				</h1>
-				<a class="header__arrow" href="#">
+				<a class="header__arrow" href="#jobs">
 					<span class="header__arrow-text">дивитися роботи</span>
 				</a>
 			</div>
@@ -69,7 +71,7 @@
 	</header>
 
 	<main class="main">
-		<section class="about section-padding">
+		<section class="about section-padding" id="about">
 			<div class="container">
 
 				<h2 class="title">Про мене</h2>
@@ -90,7 +92,7 @@
 			</div>
 		</section>
 		
-		<section class="skills section-padding">
+		<section class="skills section-padding" id="skills">
 			<div class="container">
 				<h2 class="title">Навички</h2>
 				<div class="skills__inner">
@@ -131,7 +133,7 @@
 			</div>
 		</section>
 
-		<section class="services section-padding">
+		<section class="services section-padding" id="services">
 			<div class="container">
 				<h2 class="title">Послуги</h2>
 				<ul class="services__inner">
@@ -163,7 +165,7 @@
 
 		<!-- Second homework -->
 
-		<section class="jobs">
+		<section class="jobs" id="jobs">
 			<div class="container">
 
 				<h2 class="title">Мої роботи</h2>
@@ -221,7 +223,7 @@
 
 		<!-- Third homework -->
 
-		<section class="testimonials section-padding">
+		<section class="testimonials section-padding" id="testimonials">
 			<div class="container">
 				<h2 class="title">Відгуки клієнтів</h2>
 				<div class="testimonials__wrapper">
@@ -243,7 +245,7 @@
 			</div>
 		</section>
 
-		<section class="stats section-padding">
+		<section class="stats section-padding" id="stats">
 			<div class="container">
 				<h2 class="sr-only">Статистика</h2>
 				<ul class="stats__items">
@@ -272,7 +274,7 @@
 			</div>
 		</section>
 
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div class="container">
 				<h2 class="title">Контакти</h2>
 				<div class="contacts__wrapper">
@@ -283,14 +285,14 @@
 						<ul class="contacts__links">
 							<li class="contacts__unit">
 								<a class="contacts__link" href="tel: +380501111111">
-									+38 (050) 111 11 11
 									<span class="sr-only">Мiй номер телефону</span>
+									+38 (050) 111 11 11
 								</a>
 							</li>
 							<li class="contacts__unit">
 								<a class="contacts__link" href="mailto: frontend-monster@email.com">
-									frontend-monster@email.com
 									<span class="sr-only">Моя електронна пошта</span>
+									frontend-monster@email.com
 								</a>
 							</li>
 						</ul>
@@ -340,7 +342,7 @@
 	</main>
 
 	<footer class="footer">
-		<a class="logo" href="#">
+		<a class="logo" href="#header">
 			<img class="logo__img" src="images/logo.svg" alt="Логотип">
 		</a>
 	</footer>
